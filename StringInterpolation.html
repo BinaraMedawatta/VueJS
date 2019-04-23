@@ -1,0 +1,22 @@
+<html lang="en">
+
+<div id="app">
+	<h1>{{name}}</h1>
+	<h2>{{age+5}}</h2>
+	<h3>{{isActive ? 'is Active' : 'is not active'}}</h3>
+	<h3>{{message.split('').reverse().join('')}}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+	new Vue({
+		el:'#app',
+		data:{
+			name: 'Binara',
+			age: 21,
+			isActive: false,
+			message: 'Hello'
+		}
+	})
+</script>
